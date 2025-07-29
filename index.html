@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compiler Workflow Visualization</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Home Screen -->
+    <div id="home-screen" class="screen">
+        <h1>Welcome to Compiler Workflow Visualization</h1>
+        <p>Explore and learn how compilers process code step-by-step.</p>
+        <button id="start-btn">Get Started</button>
+    </div>
+
+    <!-- Code Input Section -->
+    <div id="code-input-section" class="screen hidden">
+        <h2>Code Input</h2>
+        <textarea id="code-editor" placeholder="Type your code here..."></textarea>
+        <button id="clear-btn">Clear Code</button>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div id="navigation">
+        <button class="nav-btn" data-phase="lexical-analysis">Lexical Analysis</button>
+        <button class="nav-btn" data-phase="syntax-analysis">Syntax Analysis</button>
+        <button class="nav-btn" data-phase="semantic-analysis">Semantic Analysis</button>
+        <button class="nav-btn" data-phase="intermediate-code">Intermediate Code</button>
+        <button class="nav-btn" data-phase="code-optimization">Optimize Code</button>
+        <!-- ✅ Fixed -->
+        <button class="nav-btn" data-phase="final-code">Final Code</button>
+        <!-- ✅ Fixed -->
+    </div>
+
+    <!-- Lexical Analysis Section -->
+    <div id="lexical-analysis" class="phase hidden">
+        <h2>Lexical Analysis</h2>
+        <button id="analyze-tokens-btn">Analyze Tokens</button>
+        <div id="token-output"></div>
+    </div>
+
+    <!-- Syntax Analysis Section -->
+    <div id="syntax-analysis" class="phase hidden">
+        <h2>Syntax Analysis</h2>
+        <button id="generate-parse-tree-btn">Generate Parse Tree</button>
+        <div id="parse-tree-container">
+            <div id="parse-tree-output"></div>
+        </div>
+    </div>
+
+    <!-- Semantic Analysis Section -->
+    <div id="semantic-analysis" class="phase hidden">
+        <h2>Semantic Analysis</h2>
+        <button id="check-semantics-btn">Check Semantics</button>
+        <div id="semantic-errors-output"></div>
+    </div>
+
+    <!-- Intermediate Code Generation Section -->
+    <div id="intermediate-code" class="phase hidden">
+        <h2>Intermediate Code Generation</h2>
+        <button id="generate-ic-btn">Generate Intermediate Code</button>
+        <table id="ic-table">
+            <thead>
+                <tr>
+                    <th>Step</th>
+                    <th>Instruction</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- ✅ Code Optimization Section -->
+    <div id="code-optimization" class="phase hidden">
+        <h2>Code Optimization</h2>
+        <button id="optimize-code-btn">Optimize Code</button>
+        <div id="optimization-results">
+            <h3>Before Optimization</h3>
+            <table id="before-optimization-table">
+                <thead>
+                    <tr>
+                        <th>Step</th>
+                        <th>Instruction</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <h3>After Optimization</h3>
+            <table id="after-optimization-table">
+                <thead>
+                    <tr>
+                        <th>Step</th>
+                        <th>Instruction</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ✅ Final Code Generation Section -->
+    <div id="final-code" class="phase hidden">
+        <h2>Final Code Generation</h2>
+        <button id="generate-final-code-btn">Generate Final Code</button>
+        <table id="final-code-table">
+            <thead>
+                <tr>
+                    <th>Step</th>
+                    <th>Machine Instruction</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

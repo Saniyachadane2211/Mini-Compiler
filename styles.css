@@ -1,0 +1,278 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+
+/* Screen Layout */
+
+.screen {
+    text-align: center;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Home Screen */
+
+#home-screen {
+    padding-top: 100px;
+}
+
+#start-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#start-btn:hover {
+    background-color: #45a049;
+}
+
+
+/* Code Input Section */
+
+#code-editor {
+    width: 80%;
+    height: 200px;
+    font-family: monospace;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    resize: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Navigation Styles */
+
+#navigation {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.nav-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Phase Section */
+
+.phase {
+    display: none;
+}
+
+.phase.hidden {
+    display: none;
+}
+
+.phase:not(.hidden) {
+    display: block;
+}
+
+
+/* Token Output */
+
+#token-output {
+    margin-top: 20px;
+    font-family: monospace;
+    background-color: #f4f4f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 80%;
+    margin: auto;
+}
+
+
+/* Parse Tree Output */
+
+#parse-tree-output {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+/* Parse Tree Container */
+
+#parse-tree-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+
+/* Node Box Styling */
+
+.parse-tree-node {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #007BFF;
+    background-color: #f4f4f9;
+    border-radius: 5px;
+    font-family: monospace;
+}
+
+
+/* Arrow Styling */
+
+.parse-tree-arrow {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #007BFF;
+    margin: 0;
+}
+
+
+/* Semantic Errors Output */
+
+#semantic-errors-output {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe6e6;
+    border: 1px solid #ffb3b3;
+    border-radius: 5px;
+    color: #d9534f;
+    font-family: monospace;
+}
+
+
+/* Intermediate Code Table */
+
+#ic-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    font-family: monospace;
+}
+
+#ic-table th,
+#ic-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+}
+
+#ic-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.nav-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.nav-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Code Optimization Tables */
+
+#optimization-results {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#before-optimization-table,
+#after-optimization-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    font-family: monospace;
+}
+
+#before-optimization-table th,
+#after-optimization-table th,
+#before-optimization-table td,
+#after-optimization-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+}
+
+#before-optimization-table th,
+#after-optimization-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+
+/* Final Code Table */
+
+#final-code-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    font-family: monospace;
+}
+
+#final-code-table th,
+#final-code-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+}
+
+#final-code-table th {
+    background-color: #007BFF;
+    color: white;
+}
